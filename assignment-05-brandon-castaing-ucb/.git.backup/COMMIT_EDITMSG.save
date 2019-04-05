@@ -1,0 +1,17 @@
+Add Asgn 5
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Fri Feb 15 02:23:41 2019 +0000
+#
+# On branch add_asgn5
+# Your branch is up-to-date with 'origin/add_asgn5'.
+#
+# Changes to be committed:
+#	new file:   .ipynb_checkpoints/asgn5-bonus-redis-checkpoint.ipynb
+#	new file:   asgn5-bonus-redis.ipynb
+#	new file:   bcastaing-history.md
+#	new file:   bcastaing-history.txt
+#	new file:   docker-compose.yml
+#

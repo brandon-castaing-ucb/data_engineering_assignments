@@ -1,0 +1,813 @@
+    1  ls
+    2  pwd
+    3  whoami
+    4  ls ~/.ssh
+    5  cat ~/.ssh/authorized_keys 
+    6  exit
+    7  ls
+    8  pwd
+    9  whoami
+   10  cd ~/w205
+   11  docker pull midsw205/base
+   12  mkdir w205
+   13  ls
+   14  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+   15  pwd
+   16  ls
+   17  ls w205/
+   18  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+   19  ls
+   20  ls w205/
+   21  ls -l w205/
+   22  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+   23  cd w205/
+   24  ls
+   25  ls -la
+   26  ps -ef
+   27  ls
+   28  ls -la
+   29  git clone https://github.com/mids-w205-crook/course-content.git
+   30  git pull --all
+   31  git status
+   32  ls
+   33  cd course-content/
+   34  ls
+   35  git pull --all
+   36  ls
+   37  git clone https://github.com/mids-w205-crook/signup-brandon-castaing-ucb.git
+   38  ls
+   39  mv -r signup-brandon-castaing-ucb/ ../
+   40  mv signup-brandon-castaing-ucb/ ../
+   41  ls
+   42  cd ..
+   43  ls
+   44  cd signup-brandon-castaing-ucb/
+   45  ls
+   46  cd ..
+   47  ls
+   48  cd signup-brandon-castaing-ucb/n
+   49  cd signup-brandon-castaing-ucb
+   50  ls
+   51  cat README.md
+   52  vim README.md 
+   53  git status
+   54  git add .
+   55  git status
+   56  git commit -m 'Update README.md'
+   57  git config --global user.email bcastaing@berkeley.edu
+   58  git status
+   59  git commit -m 'Update README.md'
+   60  git push
+   61  ls
+   62  pwd
+   63  git status
+   64  git pull
+   65  ls
+   66  cd w205/
+   67  ls
+   68  git clone https://github.com/mids-w205-crook/assignment-02-brandon-castaing-ucb.git
+   69  ls
+   70  cd assignment-02-brandon-castaing-ucb/
+   71  ls
+   72  vim README.md
+   73  git status
+   74  git add .
+   75  git checkout -b add_assignment2
+   76  git commit -m 'Add assignment 2 submission'
+   77  git push
+   78  git checkout -
+   79  git pull
+   80  ls
+   81  pwd
+   82  docker pull midsw205/hadoop:0.0.2
+   83  docker pull midsw205/presto:0.0.1
+   84  docker ls
+   85  docker ps
+   86  docker ls -a
+   87  ls
+   88  pwd
+   89  cd w205/
+   90  ls
+   91  pwd
+   92  ls
+   93  cd course-content/
+   94  git pull --al
+   95  git pull --all
+   96  docker pull midsw205/base:latest
+   97  docker pull midsw205/base:0.1.8
+   98  docker pull midsw205/base:0.1.9
+   99  docker pull redis
+  100  docker pull confluentinc/cp-zookeeper:latest
+  101  docker pull confluentinc/cp-kafka:latest
+  102  docker pull midsw205/spark-python:0.0.5
+  103  docker pull midsw205/spark-python:0.0.6
+  104  docker pull midsw205/cdh-minimal:latest
+  105  curl -L -o annot_fpid.json https://goo.gl/qWiu7d
+  106  curl -L -o lp_data.csv https://goo.gl/FDFPYB
+  107  ls
+  108  mv lp_data.csv ..
+  109  mv annot_fpid.json ..
+  110  ls
+  111  cd ..
+  112  ls
+  113  head lp_data.csv 
+  114  tail lp_data.csv 
+  115  ls
+  116  head annot_fpid.json 
+  117  cat lp_data.csv | sort -g
+  118  cat lp_data.csv | sort -n
+  119  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+  120  ls
+  121  git clone https://github.com/mids-w205-crook/assignment-03-brandon-castaing-ucb.git
+  122  ls
+  123  git clone https://github.com/mids-w205-crook/assignment-04-brandon-castaing-ucb.git
+  124  ls
+  125  cd assignment-04-brandon-castaing-ucb/
+  126  ls
+  127  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  128  ls
+  129  pwd
+  130  cd ..
+  131  ls
+  132  pwd
+  133  cd w205/
+  134  ls
+  135  bq query --use_legacy_sql=false 'SELECT count(*) FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  136  gcloud auth login
+  137  bq query --use_legacy_sql=false 'SELECT count(*) FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  138  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  139  ls
+  140  cd assignment-0
+  141  cd assignment-03
+  142  cd assignment-03-brandon-castaing-ucb/
+  143  ls
+  144  git status
+  145  git add assignment3.ipynb 
+  146  git checkout -b add_asgn3
+  147  git commit -m 'Add assignment 3 ipynb'
+  148  git push
+  149  ls
+  150  cd w205/
+  151  ls
+  152  ls -la
+  153  cd ..
+  154  sudo chown -R science:science ~/w205
+  155  cd w205/
+  156  ls -la
+  157  cd ..
+  158  cd w205/course-content/
+  159  ls
+  160  git pull --all
+  161  cd ../..
+  162  ls
+  163  cd w205/
+  164  ls
+  165  docker ps -a
+  166  docker ps
+  167  docker ps -aq
+  168  docker ls
+  169  docker pull midsw205/hadoop:0.0.2
+  170  docker pull midsw205/presto:0.0.1
+  171  docker pull midsw205/base:latest
+  172  docker pull midsw205/base:0.1.8
+  173  docker pull midsw205/base:0.1.9
+  174  docker pull redis
+  175  docker pull confluentinc/cp-zookeeper:latest
+  176  docker pull confluentinc/cp-kafka:latest
+  177  docker pull midsw205/spark-python:0.0.5
+  178  docker pull midsw205/spark-python:0.0.6
+  179  docker pull midsw205/cdh-minimal:latest
+  180  docker pull midsw205/hadoop:0.0.2
+  181  docker pull midsw205/presto:0.0.1
+  182  docker run -it --rm -v ~/w205:/w205 midsw205/base bash
+  183  docker run -it -v ~/w205:/w205 midsw205/base bash
+  184  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  185  docker ps -a
+  186  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  187  exit
+  188  docker ps -a
+  189  docker ps
+  190  docker rm 9c852bd9f3d5
+  191  docker rm 9c852bd9f3d5 -f
+  192  docker rm 9c852bd9f3d5
+  193  docker ps
+  194  docker rm kind_swartz -f
+  195  docker ps
+  196  docker rm -f $(docker ps -a)
+  197  docker rm -f $(docker ps -aq)
+  198  docker ps
+  199  docker rm -f $(docker ps -aq)
+  200  docker ps -aq
+  201  docker ps -a
+  202  docker ps -aq
+  203  docker ps -al
+  204  docker ps -a
+  205  docker ps
+  206  docker rm -f $(docker ps -aq)
+  207  docker ps
+  208  docker ps -a
+  209  which docker
+  210  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  211  docker images
+  212  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base ls
+  213  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base pwd
+  214  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bq query --use_legacy_sql=false 'SELECT count(distinct station_id) FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  215  cd ~/.ssh
+  216  ls
+  217  cd ~/w205/
+  218  ls
+  219  cd assignment-04-brandon-castaing-ucb/
+  220  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  221  eval `ssh-agent`
+  222  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  223  sudo chmod 644 ~/.ssh/bpc_mids_id_rsa 
+  224  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  225  sudo chmod 400 ~/.ssh/bpc_mids_id_rsa 
+  226  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  227  git pull
+  228  cd ~/.ssh
+  229  ls
+  230  cat authorized_keys 
+  231  cat bpc_mids_id_rsa.pub >> authorized_keys 
+  232  cat authorized_keys 
+  233  rm bpc_mids_id_rsa.pub 
+  234  cd ~/w205/
+  235  ls
+  236  cd assignment-04-brandon-castaing-ucb/
+  237  git pull
+  238  sudo chmod 600 ~/.ssh/bpc_mids_id_rsa 
+  239  git pull
+  240  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  241  git pull
+  242  cd ~/.ssh
+  243  ls
+  244  rm bpc_mids_id_rsa 
+  245  ls
+  246  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  247  sudo chmod 600 ~/.ssh/bpc_mids_id_rsa 
+  248  cd ~/w205/
+  249  ls
+  250  git clone git@github.com:mids-w205-crook/assignment-05-brandon-castaing-ucb.git
+  251  ls
+  252  cd ~/.ssh
+  253  ls
+  254  cd w205/
+  255  ls
+  256  docker run redis
+  257  docker ps -a
+  258  docker rm -rf $(docker ps -a)
+  259  docker rm -f $(docker ps -a)
+  260  docker ps -a
+  261  docker run -d redis
+  262  docker ps -a
+  263  docker rm -f $(docker ps -a)
+  264  docker ps -a
+  265  docker run -d --name redis redis
+  266  docker ps -a
+  267  docker rm -f redis
+  268  docker ps -a
+  269  docker run -d --name redis -p 6379:6379 redis
+  270  docker ps -a
+  271  docker rm -f redis
+  272  docker ps -a
+  273  mkdir redis-standalone
+  274  ls
+  275  cd redis-standalone/
+  276  ls
+  277  cp ../course-content/05-Storing-Data-II/example-0-docker-compose.yml docker-compose.yml
+  278  cat docker-compose.yml 
+  279  docker-compose up -d
+  280  docker ps -a
+  281  docker-compose ps
+  282  docker-compose logs redis
+  283  docker ps -a
+  284  docker-compose -a
+  285  docker ps -a
+  286  docker-compose ps
+  287  docker-compose ps -a
+  288  sudo apt-get install redis
+  289  docker-compose logs redis
+  290  docker-compose logs redis less
+  291  docker-compose logs redis | tail
+  292  docker-compose logs redis | less
+  293  ipython
+  294  docker-compose down
+  295  docker ps- a
+  296  docker ps -a
+  297  docker-compose up
+  298  docker-compose down
+  299  docker ps -a
+  300  mkdir ~/w205/redis-cluster
+  301  cd ~/w205/redis-cluster
+  302  cp ../course-content/05-Storing-Data-II/example-1-docker-compose.yml docker-compose.yml
+  303  ls
+  304  cat docker-compose.yml 
+  305  docker-compose up -d
+  306  docker ps- a
+  307  docker ps -a
+  308  docker-compose logs redis
+  309  docker-compose logs misw205
+  310  docker-compose logs midsw205
+  311  docker-compose logs mids
+  312  docker-compose exec bash mids
+  313  docker-compose exec mids bash
+  314  ls
+  315  docker ps -a
+  316  docker-compose down
+  317  docker ps -a
+  318  cp ../course-content/05-Storing-Data-II/example-2-docker-compose.yml docker-compose.yml
+  319  ls
+  320  cat docker-compose.yml 
+  321  docker-compose up -d
+  322  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  323  docker-compose down
+  324  cp ../course-content/05-Storing-Data-II/example-3-docker-compose.yml docker-compose.yml
+  325  cat docker-compose.yml 
+  326  docker-compose up -d
+  327  docker-compose logs mids
+  328  docker-compose down
+  329  docker ps -a
+  330  Removing network rediscluster_default
+  331  cp ../course-content/05-Storing-Data-II/example-4-docker-compose.yml docker-compose.yml
+  332  cat docker-compose.yml 
+  333  curl -L -o trips.csv https://goo.gl/QvHLKe
+  334  ls
+  335  docker-compose up -d
+  336  docker-compose logs mids
+  337  docker-compose down
+  338  docker ps -a
+  339  cd w205/
+  340  ls
+  341  ls -l
+  342  cd ~/w205/course-content/
+  343  git pull --al
+  344  git pull --all
+  345  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  346  eval `ssh-agent`
+  347  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  348  git pull --all
+  349  docker ps -a
+  350  git pull
+  351  cd w205/
+  352  ls
+  353  cd assignment-04-brandon-castaing-ucb/
+  354  ls
+  355  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  356  git status
+  357  git commit -m 'Add Asgn 4 Jupyter Notebook'
+  358  git status
+  359  git commit -m 'Add Asgn 4 Jupyter Notebook'
+  360  git pull
+  361  git status
+  362  git checkout -b add_asgn_4
+  363  git commit -m 'Add Asgn 4 Jupyter Notebook'
+  364  git push
+  365  ls ~/.ssh
+  366  ls
+  367  cd w205/
+  368  ls
+  369  history
+  370  ls
+  371  cd redis-cluster/
+  372  ls
+  373  docker ps -a
+  374  cd ../assignment-05-brandon-castaing-ucb/
+  375  ls
+  376  cat htmartin-annotations.md 
+  377  cd ../redis-cluster/
+  378  ls
+  379  cat docker-compose.yml 
+  380  cd ..
+  381  cp redis-cluster/docker-compose.yml assignment-05-brandon-castaing-ucb/
+  382  cd assignment-05-brandon-castaing-ucb/
+  383  ls
+  384  docker-compose up
+  385  docker ps -a
+  386  docker-compose down
+  387  docker ps -a
+  388  history
+  389  ls
+  390  history > bcastaing-history.txt
+  391  ls
+  392  cat bcastaing-history.txt 
+  393  ls
+  394  cp bcastaing-history.txt bcastaing-history.md
+  395  vim bcastaing-history.md
+  396  rm bcastaing-history.md
+  397  touch bcastaing-history.md
+  398  cat bcastaing-history.txt
+  399  ls
+  400  vim bcastaing-history.md
+  401  ls
+  402  git add .
+  403  git status
+  404  cd ..
+  405  cd assignment-05-brandon-castaing-ucb/
+  406  git status
+  407  git checkout -b add_asgn5
+  408  git commit -m 'Add Asgn 5'
+  409  git puh
+  410  git push
+  411  eval `ssh-agent`
+  412  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  413  git push
+  414  ls
+  415  cat asgn5-bonus-redis.py.ipynb 
+  416  docker-compose up
+  417  docker-compose down
+  418  git status
+  419  git add .
+  420  git status
+  421  git commit --amend
+  422  cd w205/
+  423  cd assignment-05-brandon-castaing-ucb/
+  424  ls
+  425  git status
+  426  git commit -m 'Update asgn5'
+  427  git push
+  428  eval `ssh-agent`
+  429  ssh-add ~/.s
+  430  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  431  git push
+  432  ls
+  433  cd ..
+  434  ls
+  435  cat junk.csv | sort | uniq | wc -l
+  436  mkdir kafka
+  437  cd kafka
+  438  ls
+  439  vim docker-compose.yml
+  440  docker-compose up -d
+  441  docker ps -a
+  442  docker-compose logs kafka_zookeeper_1
+  443  docker-compose logs zookeeper 
+  444  docker-compose logs zookeeper | grep -i binding
+  445  docker-compose logs kafka
+  446  ls
+  447  docker-compose logs kafka | grep -i starting
+  448  docker-compose logs kafka | grep -i started
+  449  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper localhost:32181
+  450  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper localhost:32181
+  451  docker-compose exec kafka bash -c "seq 42 | kafka-console-producer --request-required-acks 1 --broker-list localhost:29092 --topic foo && echo 'Produced 42 messages.'"
+  452  seq 42
+  453  ls
+  454  docker-compose exec kafka kafka-console-consumer --bootstrap-server localhost:29092 --topic foo --from-beginning --max-messages 42
+  455  docker-compose down
+  456  cd ..
+  457  ls
+  458  git clone git@github.com:mids-w205-crook/assignment-06-brandon-castaing-ucb.git
+  459  ls
+  460  cp ~/w205/course-content/06-Transforming-Data/docker-compose.yml ~/w205/kafka/
+  461  ls
+  462  cd ~/w205/kafka/
+  463  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+  464  ls
+  465  head github-example-large.json 
+  466  docker-compose up -d
+  467  docker-compose logs -f kafka
+  468  cd w205/
+  469  ls
+  470  cd kafka
+  471  ls
+  472  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  473  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  474  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json"
+  475  clear
+  476  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json"
+  477  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.'"
+  478  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c"
+  479  https://api.github.com/repos/stedolan/jq/commits/61b75639a76307329c6a26daff3ff00a57469185
+  480  docker-compose exec mids bash -c "cat /w205/kafka/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  481  docker-compose exec kafka kafka-console-consumer --bootstrap-server kafka:29092 --topic foo --from-beginning --max-messages 42
+  482  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+  483  docker-compose exec kafka kafka-console-consumer --bootstrap-server kafka:29092 --topic foo --from-beginning --max-messages 42
+  484  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  485  docker-compose down
+  486  cd w205/
+  487  ls
+  488  cd spark-with-kafka/
+  489  ls
+  490  docker-compose logs -f kafka
+  491  cd w205/
+  492  mkdir ~/w205/spark-with-kafka
+  493  cd spark-with-kafka/
+  494  cp ~/w205/course-content/07-Sourcing-Data/docker-compose.yml .
+  495  ls
+  496  cat docker-compose.yml 
+  497  docker-compose up -d
+  498  docker ls
+  499  docker ps
+  500  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  501  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  502  docker-compose exec kafka bash -c "seq 42 | kafka-console-producer --request-required-acks 1 --broker-list kafka:29092 --topic foo && echo 'Produced 42 messages.'"
+  503  docker-compose exec spark pyspark
+  504  docker-compose down
+  505  docker ps- a
+  506  docker ps -a
+  507  cd ~/w205
+  508  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+  509  cd ~/w205/spark-with-kafka
+  510  docker-compose up -d
+  511  cd ..
+  512  ls
+  513  ls -la lp_data.csv 
+  514  cd spark-with-kafka/
+  515  ls
+  516  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  517  docker-compose exec kafka kafka-topics --describe --topic foo --zookeeper zookeeper:32181
+  518  docker-compose exec mids bash -c "cat /w205/github-example-large.json"
+  519  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.'"
+  520  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.[]' -c"
+  521  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  522  docker-compose exec spark pyspark
+  523  docker-compose down
+  524  ls
+  525  cd ..
+  526  ls
+  527  pwd
+  528  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  529  ls
+  530  cd redis-cluster/
+  531  ls
+  532  cat docker-compose.yml 
+  533  cd ..
+  534  cd assignment-05-brandon-castaing-ucb/
+  535  ls
+  536  cat docker-compose.yml 
+  537  cd ..
+  538  ls
+  539  cd kafka
+  540  ls
+  541  cat docker-compose.yml 
+  542  cd ..
+  543  ls
+  544  cd kafka
+  545  ls
+  546  cp docker-compose.yml ~/w205/assignment-07-brandon-castaing-ucb/
+  547  cd ..
+  548  ls
+  549  cd assignment-07-brandon-castaing-ucb/
+  550  ls
+  551  cat docker-compose.yml 
+  552  docker compose up -d
+  553  docker-compose up -d
+  554  docker ps -a
+  555  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper localhost:32181
+  556  docker-compose down
+  557  docker ps -a
+  558  cat docker-compose.yml 
+  559  docker-compose up -d
+  560  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  561  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e"
+  562  cd w205/
+  563  ls
+  564  history
+  565  docker ps -a
+  566  cd assignment-07-brandon-castaing-ucb/
+  567  docker-compose exec mids bash -c "kafkacat -C -b kafka:29092 -t foo -o beginning -e" | wc -l
+  568  docker-compose down
+  569  ls
+  570  cd ..
+  571  ls
+  572  cd assignment-06-brandon-castaing-ucb/
+  573  ls
+  574  cd ../assignment-07-brandon-castaing-ucb/
+  575  ls
+  576  cp docker-compose.yml ../assignment-06-brandon-castaing-ucb/
+  577  ls
+  578  cd ../assignment-06-brandon-castaing-ucb/
+  579  ls
+  580  cat htmartin-annotations.md 
+  581  history > bcastaing-history.txt
+  582  vim hist
+  583  ls
+  584  vim bcastaing-history.txt 
+  585  cp bcastaing-history.txt bcastaing-annotations.md
+  586  vim bcastaing-annotations.md 
+  587  rm bcastaing-annotations.md 
+  588  cat bcastaing-history.txt 
+  589  vim bcastaing-annotations.md
+  590  git add .
+  591  git status
+  592  git checkout -b add_assignment6
+  593  git add .
+  594  git commit -m 'Add Assignment 6'
+  595  git push
+  596  eval `ssh-agent`
+  597  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  598  git push
+  599  ls
+  600  cd w205/
+  601  ls
+  602  cd assignment-06-brandon-castaing-ucb/
+  603  ls
+  604  cat README.md
+  605  cd ..
+  606  cd assignment-05-brandon-castaing-ucb/
+  607  cat README.md
+  608  cd ..
+  609  ls
+  610  eval `ssh-agent`
+  611  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  612  git clone git@github.com:mids-w205-crook/assignment-07-brandon-castaing-ucb.git
+  613  ls
+  614  docker pull midsw205/base:latest
+  615  docker pull midsw205/base:0.1.8
+  616  docker pull midsw205/base:0.1.9
+  617  docker pull redis
+  618  docker pull confluentinc/cp-zookeeper:latest
+  619  docker pull confluentinc/cp-kafka:latest
+  620  docker pull midsw205/spark-python:0.0.5
+  621  docker pull midsw205/spark-python:0.0.6
+  622  docker pull midsw205/cdh-minimal:latest
+  623  docker pull midsw205/hadoop:0.0.2
+  624  docker pull midsw205/presto:0.0.1
+  625  ps -ef
+  626  ps -ef | grep -i science
+  627  cd w205/
+  628  cd spark-with-kafka-and-hdfs/
+  629  cat docker-compose.yml 
+  630  head players.json
+  631  cd ..
+  632  head players.json
+  633  vim players.json 
+  634  ls -la
+  635  vim github-example-large.json 
+  636  cd w205/
+  637  ls
+  638  cd course-content/
+  639  ls
+  640  cd ..
+  641  ls
+  642  cd spark-with-kafka-and-hdfs/
+  643  docker-compose logs -f kafka
+  644  cd w205/
+  645  ls
+  646  cd spark-with-kafka-and-hdfs/
+  647  docker-compose exec cloudera hadoop fs -ls /tmp/
+  648  docker-compose exec cloudera hadoop fs -ls /
+  649  ls -la
+  650  docker-compose exec cloudera hadoop fs -ls /
+  651  docker-compose exec cloudera hadoop fs -ls /tmp/
+  652  docker-compose exec cloudera hadoop fs -ls /tmp/players/
+  653  docker-compose exec cloudera hadoop fs -ls /tmp/extracted_players
+  654  docker-compose exec cloudera hadoop fs -ls /tmp/
+  655  docker-compose exec kafka kafka-topics --create --topic commits --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  656  cd ~/w205
+  657  curl -L -o github-example-large.json https://goo.gl/Y4MD58
+  658  cd ~/w205/spark-with-kafka-and-hdfs
+  659  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t commits"
+  660  docker-compose exec cloudera hadoop fs -ls /tmp/
+  661  docker-compose exec cloudera hadoop fs -ls /tmp/commits
+  662  docker-compose exec cloudera hadoop fs -ls /tmp/commits/
+  663  exit()
+  664  ls
+  665  cd w205/
+  666  ls
+  667  git clone git@github.com:mids-w205-crook/assignment-08-brandon-castaing-ucb.git
+  668  eval `ssh-agent`
+  669  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  670  git clone git@github.com:mids-w205-crook/assignment-08-brandon-castaing-ucb.git
+  671  git clone git@github.com:mids-w205-crook/assignment-09-brandon-castaing-ucb.git
+  672  git clone git@github.com:mids-w205-crook/assignment-10-brandon-castaing-ucb.git
+  673  git clone git@github.com:mids-w205-crook/assignment-11-brandon-castaing-ucb.git
+  674  git clone git@github.com:mids-w205-crook/assignment-12-brandon-castaing-ucb.git
+  675  ls
+  676  ls -la
+  677  mkdir ~/w205/spark-with-kafka-and-hdfs
+  678  cd ~/w205/spark-with-kafka-and-hdfs
+  679  cp ~/w205/course-content/08-Querying-Data/docker-compose.yml .
+  680  ls
+  681  docker-compose up -d
+  682  docker ps -a
+  683  docker-compose exec kafka kafka-topics --create --topic players --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  684  cd ~/w205
+  685  curl -L -o players.json https://goo.gl/vsuCpZ
+  686  cd ~/w205/spark-with-kafka-and-hdfs
+  687  ls
+  688  cd ..
+  689  head players.json 
+  690  cd spark-with-kafka-and-hdfs/
+  691  docker-compose exec mids bash -c "cat /w205/players.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t players"
+  692  docker-compose exec spark pyspark
+  693  docker ps -a
+  694  docker-compose down
+  695  ls
+  696  docker ps -a
+  697  cd ..
+  698  ls
+  699  cd assignment-7
+  700  cd assignment-07-brandon-castaing-ucb/
+  701  ls
+  702  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  703  ls
+  704  cat docker-compose.yml 
+  705  ls
+  706  docker-compose up -d
+  707  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  708  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  709  docker-compose exec mids bash -c "cat /w205/assignment-07-brandon-castaing-ucb/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  710  docker-compose exec spark pyspark
+  711  docker ps -a
+  712  cat docker-compose.yml 
+  713  ls
+  714  cat docker-compose.yml 
+  715  docker ps -a
+  716  docker-compose down
+  717  ls
+  718  cd ..
+  719  ls
+  720  cp spark-with-kafka/docker-compose.yml assignment-07-brandon-castaing-ucb/
+  721  cd assignment-07-brandon-castaing-ucb/
+  722  ls
+  723  docker-compose up
+  724  docker-compose down
+  725  docker-compose up -d
+  726  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  727  docker-compose exec mids bash -c "cat /w205/assignment-07-brandon-castaing-ucb/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  728  docker-compose exec spark pyspark
+  729  ls
+  730  docker-compose down
+  731  docker-compose up -d
+  732  docker-compose exec kafka kafka-topics --create --topic foo --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  733  docker-compose exec mids bash -c "cat /w205/github-example-large.json | jq '.[]' -c"
+  734  docker-compose exec mids bash -c "cat /w205/assignment-07-brandon-castaing-ucb/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c"
+  735  docker-compose exec mids bash -c "cat /w205/assignment-07-brandon-castaing-ucb/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c" | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  736  docker-compose exec mids bash -c "cat /w205/assignment-07-brandon-castaing-ucb/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c" | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  737  docker-compose exec mids bash -c "cat /w205/assignment-07-brandon-castaing-ucb/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t foo && echo 'Produced 100 messages.'"
+  738  docker-compose exec spark pyspark
+  739  docker-compose down
+  740  docker ps -a
+  741  ls
+  742  history > brandon-castaing-history.txt
+  743  touch brandon-castaing-annotations.md
+  744  less brandon-castaing-
+  745  less brandon-castaing-history.txt 
+  746  tail -n 50 brandon-castaing-history.txt 
+  747  vim brandon-castaing-annotations.md 
+  748  git status
+  749  git add .
+  750  git status
+  751  git commit -m 'Add Assignment 7'
+  752  git push
+  753  git status
+  754  git reset HEAD^
+  755  git add .
+  756  git status
+  757  git checkout -b asgn_7
+  758  git add .
+  759  git commit -m 'Add Assignment 7'
+  760  git status
+  761  git push
+  762  git checkout -
+  763  git status
+  764  git branch
+  765  git push -f
+  766  ls
+  767  docker ps -a
+  768  cd w205/
+  769  mkdir ~/w205/flask-with-kafka
+  770  cd ~/w205/flask-with-kafka
+  771  ls
+  772  vim docker-compose.yml
+  773  docker-compose up -d
+  774  docker-compose exec kafka kafka-topics --create --topic events --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  775  ls
+  776  vim game_api.py
+  777  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+  778  vim game_api.py
+  779  docker-compose exec mids env FLASK_APP=/w205/flask-with-kafka/game_api.py flask run
+  780  docker-compose down
+  781  ls
+  782  cd ..
+  783  ls
+  784  cd assignment-08-brandon-castaing-ucb/
+  785  ls
+  786  cat README.md
+  787  docker ps -a
+  788  ls
+  789  curl -L -o assessment-attempts-20180128-121051-nested.json https://goo.gl/ME6hjp
+  790  cd ..
+  791  ls
+  792  cd spark-with-kafka-and-hdfs/
+  793  ls
+  794  cp docker-compose.yml ../assignment-08-brandon-castaing-ucb/
+  795  ls
+  796  cd ..
+  797  ls
+  798  cd assignment-08-brandon-castaing-ucb/
+  799  ls
+  800  docker-compose up -d
+  801  docker-compose exec kafka kafka-topics --create --topic commits --partitions 1 --replication-factor 1 --if-not-exists --zookeeper zookeeper:32181
+  802  docker-compose exec mids bash -c "cat /w205/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t commits"
+  803  docker-compose exec mids bash -c "cat /w205/assignment-08-brandon-castaing-ucb/assessment-attempts-20180128-121051-nested.json | jq '.[]' -c | kafkacat -P -b kafka:29092 -t commits"
+  804  docker-compose exec spark pyspark
+  805  docker-compose exec cloudera hadoop ds -l /tmp/commits/
+  806  docker-compose exec cloudera hadoop fs -l /tmp/commits/
+  807  docker-compose exec cloudera hadoop fs -ls /tmp/commits/
+  808  docker-compose exec cloudera hadoop fs -ls /tmp/
+  809  docker-compose exec cloudera hadoop fs -ls /tmp/some_commit_info
+  810  docker-compose down
+  811  docker ps -a
+  812  ls
+  813  history > brandon-castaing-history.txt

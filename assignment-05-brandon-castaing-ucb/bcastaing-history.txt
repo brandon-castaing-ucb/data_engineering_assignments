@@ -1,0 +1,390 @@
+    1  ls
+    2  pwd
+    3  whoami
+    4  ls ~/.ssh
+    5  cat ~/.ssh/authorized_keys 
+    6  exit
+    7  ls
+    8  pwd
+    9  whoami
+   10  cd ~/w205
+   11  docker pull midsw205/base
+   12  mkdir w205
+   13  ls
+   14  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+   15  pwd
+   16  ls
+   17  ls w205/
+   18  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+   19  ls
+   20  ls w205/
+   21  ls -l w205/
+   22  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+   23  cd w205/
+   24  ls
+   25  ls -la
+   26  ps -ef
+   27  ls
+   28  ls -la
+   29  git clone https://github.com/mids-w205-crook/course-content.git
+   30  git pull --all
+   31  git status
+   32  ls
+   33  cd course-content/
+   34  ls
+   35  git pull --all
+   36  ls
+   37  git clone https://github.com/mids-w205-crook/signup-brandon-castaing-ucb.git
+   38  ls
+   39  mv -r signup-brandon-castaing-ucb/ ../
+   40  mv signup-brandon-castaing-ucb/ ../
+   41  ls
+   42  cd ..
+   43  ls
+   44  cd signup-brandon-castaing-ucb/
+   45  ls
+   46  cd ..
+   47  ls
+   48  cd signup-brandon-castaing-ucb/n
+   49  cd signup-brandon-castaing-ucb
+   50  ls
+   51  cat README.md
+   52  vim README.md 
+   53  git status
+   54  git add .
+   55  git status
+   56  git commit -m 'Update README.md'
+   57  git config --global user.email bcastaing@berkeley.edu
+   58  git status
+   59  git commit -m 'Update README.md'
+   60  git push
+   61  ls
+   62  pwd
+   63  git status
+   64  git pull
+   65  ls
+   66  cd w205/
+   67  ls
+   68  git clone https://github.com/mids-w205-crook/assignment-02-brandon-castaing-ucb.git
+   69  ls
+   70  cd assignment-02-brandon-castaing-ucb/
+   71  ls
+   72  vim README.md
+   73  git status
+   74  git add .
+   75  git checkout -b add_assignment2
+   76  git commit -m 'Add assignment 2 submission'
+   77  git push
+   78  git checkout -
+   79  git pull
+   80  ls
+   81  pwd
+   82  docker pull midsw205/hadoop:0.0.2
+   83  docker pull midsw205/presto:0.0.1
+   84  docker ls
+   85  docker ps
+   86  docker ls -a
+   87  ls
+   88  pwd
+   89  cd w205/
+   90  ls
+   91  pwd
+   92  ls
+   93  cd course-content/
+   94  git pull --al
+   95  git pull --all
+   96  docker pull midsw205/base:latest
+   97  docker pull midsw205/base:0.1.8
+   98  docker pull midsw205/base:0.1.9
+   99  docker pull redis
+  100  docker pull confluentinc/cp-zookeeper:latest
+  101  docker pull confluentinc/cp-kafka:latest
+  102  docker pull midsw205/spark-python:0.0.5
+  103  docker pull midsw205/spark-python:0.0.6
+  104  docker pull midsw205/cdh-minimal:latest
+  105  curl -L -o annot_fpid.json https://goo.gl/qWiu7d
+  106  curl -L -o lp_data.csv https://goo.gl/FDFPYB
+  107  ls
+  108  mv lp_data.csv ..
+  109  mv annot_fpid.json ..
+  110  ls
+  111  cd ..
+  112  ls
+  113  head lp_data.csv 
+  114  tail lp_data.csv 
+  115  ls
+  116  head annot_fpid.json 
+  117  cat lp_data.csv | sort -g
+  118  cat lp_data.csv | sort -n
+  119  docker run -it --rm -v /home/science/w205:/w205 midsw205/base:latest bash
+  120  ls
+  121  git clone https://github.com/mids-w205-crook/assignment-03-brandon-castaing-ucb.git
+  122  ls
+  123  git clone https://github.com/mids-w205-crook/assignment-04-brandon-castaing-ucb.git
+  124  ls
+  125  cd assignment-04-brandon-castaing-ucb/
+  126  ls
+  127  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  128  ls
+  129  pwd
+  130  cd ..
+  131  ls
+  132  pwd
+  133  cd w205/
+  134  ls
+  135  bq query --use_legacy_sql=false 'SELECT count(*) FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  136  gcloud auth login
+  137  bq query --use_legacy_sql=false 'SELECT count(*) FROM `bigquery-public-data.san_francisco.bikeshare_trips`'
+  138  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  139  ls
+  140  cd assignment-0
+  141  cd assignment-03
+  142  cd assignment-03-brandon-castaing-ucb/
+  143  ls
+  144  git status
+  145  git add assignment3.ipynb 
+  146  git checkout -b add_asgn3
+  147  git commit -m 'Add assignment 3 ipynb'
+  148  git push
+  149  ls
+  150  cd w205/
+  151  ls
+  152  ls -la
+  153  cd ..
+  154  sudo chown -R science:science ~/w205
+  155  cd w205/
+  156  ls -la
+  157  cd ..
+  158  cd w205/course-content/
+  159  ls
+  160  git pull --all
+  161  cd ../..
+  162  ls
+  163  cd w205/
+  164  ls
+  165  docker ps -a
+  166  docker ps
+  167  docker ps -aq
+  168  docker ls
+  169  docker pull midsw205/hadoop:0.0.2
+  170  docker pull midsw205/presto:0.0.1
+  171  docker pull midsw205/base:latest
+  172  docker pull midsw205/base:0.1.8
+  173  docker pull midsw205/base:0.1.9
+  174  docker pull redis
+  175  docker pull confluentinc/cp-zookeeper:latest
+  176  docker pull confluentinc/cp-kafka:latest
+  177  docker pull midsw205/spark-python:0.0.5
+  178  docker pull midsw205/spark-python:0.0.6
+  179  docker pull midsw205/cdh-minimal:latest
+  180  docker pull midsw205/hadoop:0.0.2
+  181  docker pull midsw205/presto:0.0.1
+  182  docker run -it --rm -v ~/w205:/w205 midsw205/base bash
+  183  docker run -it -v ~/w205:/w205 midsw205/base bash
+  184  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  185  docker ps -a
+  186  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  187  exit
+  188  docker ps -a
+  189  docker ps
+  190  docker rm 9c852bd9f3d5
+  191  docker rm 9c852bd9f3d5 -f
+  192  docker rm 9c852bd9f3d5
+  193  docker ps
+  194  docker rm kind_swartz -f
+  195  docker ps
+  196  docker rm -f $(docker ps -a)
+  197  docker rm -f $(docker ps -aq)
+  198  docker ps
+  199  docker rm -f $(docker ps -aq)
+  200  docker ps -aq
+  201  docker ps -a
+  202  docker ps -aq
+  203  docker ps -al
+  204  docker ps -a
+  205  docker ps
+  206  docker rm -f $(docker ps -aq)
+  207  docker ps
+  208  docker ps -a
+  209  which docker
+  210  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  211  docker images
+  212  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base ls
+  213  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base pwd
+  214  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bq query --use_legacy_sql=false 'SELECT count(distinct station_id) FROM `bigquery-public-data.san_francisco.bikeshare_status`'
+  215  cd ~/.ssh
+  216  ls
+  217  cd ~/w205/
+  218  ls
+  219  cd assignment-04-brandon-castaing-ucb/
+  220  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  221  eval `ssh-agent`
+  222  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  223  sudo chmod 644 ~/.ssh/bpc_mids_id_rsa 
+  224  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  225  sudo chmod 400 ~/.ssh/bpc_mids_id_rsa 
+  226  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  227  git pull
+  228  cd ~/.ssh
+  229  ls
+  230  cat authorized_keys 
+  231  cat bpc_mids_id_rsa.pub >> authorized_keys 
+  232  cat authorized_keys 
+  233  rm bpc_mids_id_rsa.pub 
+  234  cd ~/w205/
+  235  ls
+  236  cd assignment-04-brandon-castaing-ucb/
+  237  git pull
+  238  sudo chmod 600 ~/.ssh/bpc_mids_id_rsa 
+  239  git pull
+  240  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  241  git pull
+  242  cd ~/.ssh
+  243  ls
+  244  rm bpc_mids_id_rsa 
+  245  ls
+  246  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  247  sudo chmod 600 ~/.ssh/bpc_mids_id_rsa 
+  248  cd ~/w205/
+  249  ls
+  250  git clone git@github.com:mids-w205-crook/assignment-05-brandon-castaing-ucb.git
+  251  ls
+  252  cd ~/.ssh
+  253  ls
+  254  cd w205/
+  255  ls
+  256  docker run redis
+  257  docker ps -a
+  258  docker rm -rf $(docker ps -a)
+  259  docker rm -f $(docker ps -a)
+  260  docker ps -a
+  261  docker run -d redis
+  262  docker ps -a
+  263  docker rm -f $(docker ps -a)
+  264  docker ps -a
+  265  docker run -d --name redis redis
+  266  docker ps -a
+  267  docker rm -f redis
+  268  docker ps -a
+  269  docker run -d --name redis -p 6379:6379 redis
+  270  docker ps -a
+  271  docker rm -f redis
+  272  docker ps -a
+  273  mkdir redis-standalone
+  274  ls
+  275  cd redis-standalone/
+  276  ls
+  277  cp ../course-content/05-Storing-Data-II/example-0-docker-compose.yml docker-compose.yml
+  278  cat docker-compose.yml 
+  279  docker-compose up -d
+  280  docker ps -a
+  281  docker-compose ps
+  282  docker-compose logs redis
+  283  docker ps -a
+  284  docker-compose -a
+  285  docker ps -a
+  286  docker-compose ps
+  287  docker-compose ps -a
+  288  sudo apt-get install redis
+  289  docker-compose logs redis
+  290  docker-compose logs redis less
+  291  docker-compose logs redis | tail
+  292  docker-compose logs redis | less
+  293  ipython
+  294  docker-compose down
+  295  docker ps- a
+  296  docker ps -a
+  297  docker-compose up
+  298  docker-compose down
+  299  docker ps -a
+  300  mkdir ~/w205/redis-cluster
+  301  cd ~/w205/redis-cluster
+  302  cp ../course-content/05-Storing-Data-II/example-1-docker-compose.yml docker-compose.yml
+  303  ls
+  304  cat docker-compose.yml 
+  305  docker-compose up -d
+  306  docker ps- a
+  307  docker ps -a
+  308  docker-compose logs redis
+  309  docker-compose logs misw205
+  310  docker-compose logs midsw205
+  311  docker-compose logs mids
+  312  docker-compose exec bash mids
+  313  docker-compose exec mids bash
+  314  ls
+  315  docker ps -a
+  316  docker-compose down
+  317  docker ps -a
+  318  cp ../course-content/05-Storing-Data-II/example-2-docker-compose.yml docker-compose.yml
+  319  ls
+  320  cat docker-compose.yml 
+  321  docker-compose up -d
+  322  docker-compose exec mids jupyter notebook --no-browser --port 8888 --ip 0.0.0.0 --allow-root
+  323  docker-compose down
+  324  cp ../course-content/05-Storing-Data-II/example-3-docker-compose.yml docker-compose.yml
+  325  cat docker-compose.yml 
+  326  docker-compose up -d
+  327  docker-compose logs mids
+  328  docker-compose down
+  329  docker ps -a
+  330  Removing network rediscluster_default
+  331  cp ../course-content/05-Storing-Data-II/example-4-docker-compose.yml docker-compose.yml
+  332  cat docker-compose.yml 
+  333  curl -L -o trips.csv https://goo.gl/QvHLKe
+  334  ls
+  335  docker-compose up -d
+  336  docker-compose logs mids
+  337  docker-compose down
+  338  docker ps -a
+  339  cd w205/
+  340  ls
+  341  ls -l
+  342  cd ~/w205/course-content/
+  343  git pull --al
+  344  git pull --all
+  345  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  346  eval `ssh-agent`
+  347  ssh-add ~/.ssh/bpc_mids_id_rsa 
+  348  git pull --all
+  349  docker ps -a
+  350  git pull
+  351  cd w205/
+  352  ls
+  353  cd assignment-04-brandon-castaing-ucb/
+  354  ls
+  355  docker run -it --rm -p 8888:8888 -v ~/w205:/w205 midsw205/base bash
+  356  git status
+  357  git commit -m 'Add Asgn 4 Jupyter Notebook'
+  358  git status
+  359  git commit -m 'Add Asgn 4 Jupyter Notebook'
+  360  git pull
+  361  git status
+  362  git checkout -b add_asgn_4
+  363  git commit -m 'Add Asgn 4 Jupyter Notebook'
+  364  git push
+  365  ls ~/.ssh
+  366  ls
+  367  cd w205/
+  368  ls
+  369  history
+  370  ls
+  371  cd redis-cluster/
+  372  ls
+  373  docker ps -a
+  374  cd ../assignment-05-brandon-castaing-ucb/
+  375  ls
+  376  cat htmartin-annotations.md 
+  377  cd ../redis-cluster/
+  378  ls
+  379  cat docker-compose.yml 
+  380  cd ..
+  381  cp redis-cluster/docker-compose.yml assignment-05-brandon-castaing-ucb/
+  382  cd assignment-05-brandon-castaing-ucb/
+  383  ls
+  384  docker-compose up
+  385  docker ps -a
+  386  docker-compose down
+  387  docker ps -a
+  388  history
+  389  ls
+  390  history > bcastaing-history.txt
